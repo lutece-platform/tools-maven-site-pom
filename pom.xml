@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>lutece-parent-pom</artifactId>
+        <groupId>fr.paris.lutece</groupId>
+        <version>2.30</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.paris.lutece.tools</groupId>
+    <artifactId>lutece-site-pom</artifactId>
+    <packaging>pom</packaging>
+    <name>Lutece site POM</name>
+    <url>http://dev.lutece.paris.fr/</url>
+    <version>1.0.0-SNAPSHOT</version>
+    
+    <properties>
+    	<profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
+    	<profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>
+    	<profile.integ.dir>${basedir}/src/conf/integ</profile.integ.dir>
+    	<profile.formation.dir>${basedir}/src/conf/formation</profile.formation.dir>
+    	<profile.preprod.dir>${basedir}/src/conf/preprod</profile.preprod.dir>
+    	<profile.prod.dir>${basedir}/src/conf/prod</profile.prod.dir>
+    </properties>
+    
+    <profiles>
+    	<!-- Profile DEVELOPMENT -->
+    	<profile>
+			<id>dev</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.dev.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Profile RECETTE -->
+    	<profile>
+			<id>rec</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.rec.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Profile INTEGRATION -->
+    	<profile>
+			<id>integ</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.integ.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Profile FORMATION -->
+    	<profile>
+			<id>formation</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.formation.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Profile PRE-PRODUCTION -->
+    	<profile>
+			<id>preprod</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.preprod.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		
+		<!-- Profile PRODUCTION -->
+    	<profile>
+			<id>prod</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>fr.paris.lutece.tools</groupId>
+						<artifactId>maven-lutece-plugin</artifactId>
+						<extensions>true</extensions>
+						<configuration>
+							<defaultConfDirectory>${profile.prod.dir}</defaultConfDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+    </profiles>
+    
+	<scm>
+		<connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/tools/lutece-site-pom/trunk</url>
+	</scm>
+</project>

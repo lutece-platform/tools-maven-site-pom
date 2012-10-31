@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
     <url>http://dev.lutece.paris.fr/</url>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     
     <properties>
     	<profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
@@ -128,8 +128,8 @@
     </profiles>
     
 	<scm>
-		<connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/tools/lutece-site-pom/trunk</url>
+		<connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/tags/lutece-site-pom-1.0.1</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/tags/lutece-site-pom-1.0.1</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/tools/lutece-site-pom/tags/lutece-site-pom-1.0.1</url>
 	</scm>
 </project>

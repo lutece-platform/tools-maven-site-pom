@@ -3,7 +3,7 @@
     <parent>
         <artifactId>lutece-parent-pom</artifactId>
         <groupId>fr.paris.lutece</groupId>
-        <version>2.31</version>
+        <version>3.0</version>
     </parent>
     
     <modelVersion>4.0.0</modelVersion>
@@ -12,9 +12,11 @@
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
     <url>http://dev.lutece.paris.fr/</url>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     
     <properties>
+    	<serverUrl>dev.lutece.paris.fr</serverUrl>
+    	
     	<profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
     	<profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>
     	<profile.integ.dir>${basedir}/src/conf/integ</profile.integ.dir>
@@ -22,6 +24,14 @@
     	<profile.preprod.dir>${basedir}/src/conf/preprod</profile.preprod.dir>
     	<profile.prod.dir>${basedir}/src/conf/prod</profile.prod.dir>
     </properties>
+    
+    <repositories>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://${serverUrl}/maven_repository</url>
+        </repository>
+    </repositories>
     
     <profiles>
     	<!-- Profile DEVELOPMENT -->

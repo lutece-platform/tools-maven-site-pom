@@ -3,7 +3,7 @@
     <parent>
         <artifactId>lutece-parent-pom</artifactId>
         <groupId>fr.paris.lutece</groupId>
-        <version>3.0</version>
+        <version>3.1</version>
     </parent>
     
     <modelVersion>4.0.0</modelVersion>
@@ -43,6 +43,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.dev.dir}</defaultConfDirectory>
 						</configuration>
@@ -60,6 +61,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.rec.dir}</defaultConfDirectory>
 						</configuration>
@@ -77,6 +79,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.integ.dir}</defaultConfDirectory>
 						</configuration>
@@ -94,6 +97,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.formation.dir}</defaultConfDirectory>
 						</configuration>
@@ -111,6 +115,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1/version>
 						<configuration>
 							<defaultConfDirectory>${profile.preprod.dir}</defaultConfDirectory>
 						</configuration>
@@ -128,6 +133,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.prod.dir}</defaultConfDirectory>
 						</configuration>

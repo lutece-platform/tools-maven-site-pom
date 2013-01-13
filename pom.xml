@@ -115,7 +115,7 @@
 						<groupId>fr.paris.lutece.tools</groupId>
 						<artifactId>maven-lutece-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1/version>
+						<version>3.0.1</version>
 						<configuration>
 							<defaultConfDirectory>${profile.preprod.dir}</defaultConfDirectory>
 						</configuration>

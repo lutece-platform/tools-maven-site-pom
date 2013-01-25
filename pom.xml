@@ -41,9 +41,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.dev.dir}</defaultConfDirectory>
 						</configuration>
@@ -59,9 +59,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.rec.dir}</defaultConfDirectory>
 						</configuration>
@@ -77,9 +77,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.integ.dir}</defaultConfDirectory>
 						</configuration>
@@ -95,9 +95,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.formation.dir}</defaultConfDirectory>
 						</configuration>
@@ -113,9 +113,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.preprod.dir}</defaultConfDirectory>
 						</configuration>
@@ -131,9 +131,9 @@
 				<plugins>
 					<plugin>
 						<groupId>fr.paris.lutece.tools</groupId>
-						<artifactId>maven-lutece-plugin</artifactId>
+						<artifactId>lutece-maven-plugin</artifactId>
 						<extensions>true</extensions>
-						<version>3.0.1</version>
+						<version>3.0.2</version>
 						<configuration>
 							<defaultConfDirectory>${profile.prod.dir}</defaultConfDirectory>
 						</configuration>

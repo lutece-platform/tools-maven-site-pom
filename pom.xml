@@ -16,7 +16,7 @@
     
     <properties>
     	<serverUrl>dev.lutece.paris.fr</serverUrl>	
-		<lutece.plugin.version>3.0.5</lutece.plugin.version>
+		<lutece.plugin.version>4.0.3</lutece.plugin.version>
     	
     	<profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
     	<profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>

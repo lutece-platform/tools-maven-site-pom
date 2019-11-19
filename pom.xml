@@ -10,13 +10,8 @@
     <artifactId>lutece-site-pom</artifactId>
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
-    <version>2.0.6-SNAPSHOT</version>
+    <version>3.0.0-SNAPSHOT</version>
     <url>http://dev.lutece.paris.fr/</url>
-    <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/tools/lutece-site-pom/trunk</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/tools/lutece-site-pom/trunk</url>
-    </scm>
     <profiles>
         <profile>
             <id>dev</id>
@@ -132,4 +127,11 @@
         <profile.preprod.dir>${basedir}/src/conf/preprod</profile.preprod.dir>
         <profile.prod.dir>${basedir}/src/conf/prod</profile.prod.dir>
     </properties>
+    
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/tools-maven-site-pom.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/tools-maven-site-pom.git</developerConnection>
+        <url>https://github.com/lutece-platform/tools-maven-site-pom.git</url>
+    </scm>
+    
 </project>

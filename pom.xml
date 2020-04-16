@@ -3,15 +3,34 @@
     <parent>
         <artifactId>lutece-global-pom</artifactId>
         <groupId>fr.paris.lutece.tools</groupId>
-        <version>5.0.1</version>
+        <version>5.1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.tools</groupId>
     <artifactId>lutece-site-pom</artifactId>
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.1.0-SNAPSHOT</version>
     <url>http://dev.lutece.paris.fr/</url>
+    <properties>
+        <serverUrl>dev.lutece.paris.fr</serverUrl>
+        <profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
+        <profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>
+        <profile.integ.dir>${basedir}/src/conf/integ</profile.integ.dir>
+        <profile.formation.dir>${basedir}/src/conf/formation</profile.formation.dir>
+        <profile.preprod.dir>${basedir}/src/conf/preprod</profile.preprod.dir>
+        <profile.prod.dir>${basedir}/src/conf/prod</profile.prod.dir>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>fr.paris.lutece.tools</groupId>
+            <artifactId>build-config</artifactId>
+            <version>${build-config.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    
     <profiles>
         <profile>
             <id>dev</id>
@@ -20,7 +39,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.dev.dir}</defaultConfDirectory>
@@ -36,7 +55,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.rec.dir}</defaultConfDirectory>
@@ -52,7 +71,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.integ.dir}</defaultConfDirectory>
@@ -68,7 +87,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.formation.dir}</defaultConfDirectory>
@@ -84,7 +103,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.preprod.dir}</defaultConfDirectory>
@@ -100,7 +119,7 @@
                     <plugin>
                         <groupId>fr.paris.lutece.tools</groupId>
                         <artifactId>lutece-maven-plugin</artifactId>
-                        <version>${lutece.plugin.version}</version>
+                        <version>${maven-lutece-plugin.version}</version>
                         <extensions>true</extensions>
                         <configuration>
                             <defaultConfDirectory>${profile.prod.dir}</defaultConfDirectory>
@@ -117,16 +136,6 @@
             <url>http://${serverUrl}/maven_repository</url>
         </repository>
     </repositories>
-    <properties>
-        <serverUrl>dev.lutece.paris.fr</serverUrl>
-        <lutece.plugin.version>4.0.3</lutece.plugin.version>
-        <profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
-        <profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>
-        <profile.integ.dir>${basedir}/src/conf/integ</profile.integ.dir>
-        <profile.formation.dir>${basedir}/src/conf/formation</profile.formation.dir>
-        <profile.preprod.dir>${basedir}/src/conf/preprod</profile.preprod.dir>
-        <profile.prod.dir>${basedir}/src/conf/prod</profile.prod.dir>
-    </properties>
     
     <scm>
         <connection>scm:git:https://github.com/lutece-platform/tools-maven-site-pom.git</connection>

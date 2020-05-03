@@ -3,7 +3,7 @@
     <parent>
         <artifactId>lutece-global-pom</artifactId>
         <groupId>fr.paris.lutece.tools</groupId>
-        <version>5.1.0</version>
+        <version>5.1.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.tools</groupId>
@@ -14,6 +14,7 @@
     <url>http://dev.lutece.paris.fr/</url>
     <properties>
         <serverUrl>dev.lutece.paris.fr</serverUrl>
+        <explodedDirectory>${project.build.finalName}</explodedDirectory>
         <profile.dev.dir>${basedir}/src/conf/dev</profile.dev.dir>
         <profile.rec.dir>${basedir}/src/conf/rec</profile.rec.dir>
         <profile.integ.dir>${basedir}/src/conf/integ</profile.integ.dir>

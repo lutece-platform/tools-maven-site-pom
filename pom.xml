@@ -10,7 +10,7 @@
     <artifactId>lutece-site-pom</artifactId>
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
-    <version>3.2.1-SNAPSHOT</version>
+    <version>3.2.1</version>
     <url>https://dev.lutece.paris.fr/</url>
     <properties>
         <serverUrl>dev.lutece.paris.fr</serverUrl>

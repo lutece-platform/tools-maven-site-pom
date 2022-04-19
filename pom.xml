@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
     <version>3.2.1-SNAPSHOT</version>
-    <url>http://dev.lutece.paris.fr/</url>
+    <url>https://dev.lutece.paris.fr/</url>
     <properties>
         <serverUrl>dev.lutece.paris.fr</serverUrl>
         <explodedDirectory>${project.build.finalName}</explodedDirectory>
@@ -134,7 +134,7 @@
         <repository>
             <id>lutece</id>
             <name>luteceRepository</name>
-            <url>http://${serverUrl}/maven_repository</url>
+            <url>https://${serverUrl}/maven_repository</url>
         </repository>
     </repositories>
     

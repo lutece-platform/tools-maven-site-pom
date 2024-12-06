@@ -3,14 +3,14 @@
     <parent>
         <artifactId>lutece-global-pom</artifactId>
         <groupId>fr.paris.lutece.tools</groupId>
-        <version>6.1.0</version>
+        <version>7.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.tools</groupId>
     <artifactId>lutece-site-pom</artifactId>
     <packaging>pom</packaging>
     <name>Lutece site POM</name>
-    <version>3.2.3-SNAPSHOT</version>
+    <version>7.0.0-SNAPSHOT</version>
     <url>https://dev.lutece.paris.fr/</url>
     <properties>
         <serverUrl>dev.lutece.paris.fr</serverUrl>

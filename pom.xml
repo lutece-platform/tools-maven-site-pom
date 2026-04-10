@@ -30,11 +30,11 @@
             <version>${build-config.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+        <!--<dependency>
 	      <groupId>org.apache.logging.log4j</groupId>
 	      <artifactId>log4j-layout-template-json</artifactId>
 	      <scope>runtime</scope>
-	    </dependency>
+	    </dependency>-->
     </dependencies>
     
     <profiles>
@@ -134,6 +134,53 @@
                 </plugins>
             </build>
         </profile>
+         <profile>
+	      <id>openTelemetry</id>
+	      <activation>
+	        <activeByDefault>true</activeByDefault>
+	      </activation>
+	      <dependencies>
+			<!--Redirect logs to JUL-->
+			<!-- Log4j-to-JUL bridge -->
+			<dependency>
+			    <groupId>org.apache.logging.log4j</groupId>
+			    <artifactId>log4j-to-jul</artifactId>
+			    <scope>runtime</scope>
+			 </dependency> 
+	        <!-- SLF4J-to-JUL bridge  -->
+			 <dependency>
+	            <groupId>org.slf4j</groupId>
+			    <artifactId>slf4j-jdk14</artifactId>
+			    <version>2.0.17</version>
+			    <scope>runtime</scope>
+			 </dependency>
+			 <!-- Lutece Health plugin based on the MicroProfile Health specification.
+				Provides CDI-based health checks discovered automatically by the MicroProfile Health runtime (OpenLiberty mpHealth feature).-->
+			 <dependency>
+			    <groupId>fr.paris.lutece.plugins</groupId>
+			    <artifactId>plugin-health</artifactId>
+			    <version>1.0.0-SNAPSHOT</version>
+			    <type>lutece-plugin</type>
+   			    <scope>runtime</scope>
+			</dependency>		 
+			<!-- Excluding Log4j because logging is redirected to JUL through OpenLiberty, which then exports the logs to OpenTelemetry. -->
+			<dependency>
+	            <groupId>org.apache.logging.log4j</groupId>
+	            <artifactId>log4j-core</artifactId>
+	            <scope>provided</scope> <!-- neutralisé -->
+	        </dependency>
+	        <dependency>
+		    	<groupId>org.apache.logging.log4j</groupId>
+		    	<artifactId>log4j-slf4j-impl</artifactId>
+		    	<scope>provided</scope> <!-- neutralisé -->
+	        </dependency>
+	        <dependency>
+			  <groupId>org.apache.logging.log4j</groupId>
+			  <artifactId>log4j-jakarta-web</artifactId>
+			  <scope>provided</scope> <!-- neutralisé -->
+			</dependency>        		
+	      </dependencies>
+	    </profile>
     </profiles>
     <repositories>
         <repository>
